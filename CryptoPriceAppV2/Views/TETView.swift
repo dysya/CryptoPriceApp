@@ -24,7 +24,7 @@ class TETView: UIViewController, ChartViewDelegate{
         tetLineChart.delegate = self
         view.backgroundColor = .systemGroupedBackground
         initialize()
-        Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(updateData), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 80, target: self, selector: #selector(updateData), userInfo: nil, repeats: true)
     }
     
     private func initialize() {
