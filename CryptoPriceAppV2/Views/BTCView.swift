@@ -23,7 +23,6 @@ class MainView: UIViewController, ChartViewDelegate{
         line.delegate = self
         view.backgroundColor = .systemGroupedBackground
         initialize()
-        Timer.scheduledTimer(timeInterval: 80, target: self, selector: #selector(updateData), userInfo: nil, repeats: true)
     }
     
     private func initialize() {
